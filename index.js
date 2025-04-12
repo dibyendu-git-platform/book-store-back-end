@@ -2,13 +2,13 @@ const express = require('express')
 const mongoose = require('mongoose')
 require('dotenv').config()
 const app = express()
-const port = 3001
+const port = process.env.PORT || 3001
 const cors = require("cors")
 
 //middleware
 app.use(express.json());
 app.use(cors({
-  origin: ['http://localhost:5173'],
+  origin: ['http://localhost:5173','https://bookstorebydibyendu.vercel.app'],
   credentials: true
 }));
 
