@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 require('dotenv').config()
 const app = express()
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 3000
 const cors = require("cors")
 
 //middleware
